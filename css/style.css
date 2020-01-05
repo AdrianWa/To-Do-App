@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(175, 175, 175, 0.39);
+}
+
+button {
+    margin-bottom: 0;
+}
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    max-width: 1280px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading-task {
+    display: inline-block;
+    margin: auto;
+}
+
+.todo-filter {
+}
+
+.left {
+    padding-left: 15px;
+}
+
+.right {
+    padding-right: 15px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.fadingIn {
+    visibility: hidden;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+.card p {
+    margin: 5px 0px;
+}
+
+#error-name {
+    color: red;
+    margin-bottom: 10px;;
+}
+
+#todo-desc {
+    height: 120px;
+    width: 100%;
+    resize: vertical;
+}
+
+#todo-container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
